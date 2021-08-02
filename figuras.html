@@ -29,6 +29,46 @@
                 Calcular el área
             </button>
         </form>
+
+        <h2> Calcula el área y perímetro de un triángulo isósceles </h2>
+
+        <form >
+            <label for="input1Triangulo">
+                Escribe cuanto mide el primer lado de tu triángulo:
+            </label>
+            <input id = "input1Triangulo" type="number">
+            <label for="input2Triangulo">
+                Escribe cuanto mide el segundo lado de tu triángulo:
+            </label>
+            <input id = "input2Triangulo" type="number">
+            <label for="input3Triangulo">
+               Escribe cuanto mide la base de tu triángulo:
+            </label>
+            <input id = "input3Triangulo" type="number">
+            <button type="button" onclick="calcularPerimetroTriangulo()"> 
+                Calcular el perímetro
+            </button>
+            <button type="button" onclick="calcularAreaTriangulo()"> 
+                Calcular el área
+            </button>
+        </form>
+
+        <h2> Calcula el área y perímetro de un círculo </h2>
+
+        <form >
+            <label for="inputCirculo">
+                Escribe cuanto mide el radio de tu círculo:
+            </label>
+            <input id = "inputCirculo" type="number">
+            <button type="button" onclick="calcularPerimetroCirculo()"> 
+                Calcular el perímetro
+            </button>
+            <button type="button" onclick="calcularAreaCirculo()"> 
+                Calcular el área
+            </button>
+        </form>
+        
+    
     </section>
     
     <script src="./figuras.js "> </script>

@@ -95,3 +95,71 @@ function calcularAreaCuadrado(){
     const area = areaCuadrado(value);
     alert(area);
 }
+
+function calcularPerimetroTriangulo() {
+    const input1 = document.getElementById("input1Triangulo");
+    const value1 = Number (input1.value);
+    
+
+    const input2 = document.getElementById("input2Triangulo");
+    const value2 =  Number (input2.value);
+    console.log(value2 +  " " + typeof(value2));
+    
+    const input3 = document.getElementById("input3Triangulo");
+    const value3 = Number(input3.value);
+    //console.log(value3 +  " " + typeof(value3)); validando tipo de dato de entrada
+
+    const perimetro = perimetroTriangulo(value1,value2,value3);
+    console.log(perimetro);
+    alert(perimetro);
+}
+
+
+function calcularAreaTriangulo () {
+    const input1 = document.getElementById("input1Triangulo");
+    const value1 = Number (input1.value);
+    
+
+    const input2 = document.getElementById("input2Triangulo");
+    const value2 =  Number (input2.value);
+    console.log(value2 +  " " + typeof(value2));
+    
+    const input3 = document.getElementById("input3Triangulo");
+    const value3 = Number(input3.value);
+
+    if (value1 != value2) {
+        console.error("Los lados a y b no son iguales. Recuerda es un triángulo ISÓSCELES!");
+        alert("Los lados a y b no son iguales. Recuerda es un triángulo ISÓSCELES!")
+    } else {
+      //Calculo altura asumiendo que es un triángulo iscoseles  RAIZ (L1**2 - (B/2)**2 )
+
+        const h = Math.sqrt( (value1**2) - ((value3/2)**2 ));
+
+
+        //área
+        const area = areaTriangulo(value3, h);
+        console.log(area);
+        alert(area);
+        
+    }
+
+    
+}
+
+function calcularPerimetroCirculo () {
+    const input = document.getElementById("inputCirculo");
+    const value = input.value;
+
+    const perimetro = perimetroCirculo(value);
+    console.log(perimetro);
+    alert(perimetro);
+}
+
+function calcularAreaCirculo () {
+    const input = document.getElementById("inputCirculo");
+    const value = input.value;
+
+    const area = areaCirculo(value);
+    console.log(area);
+    alert(area);
+}
